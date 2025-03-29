@@ -12,5 +12,5 @@ if st.button("Analyse"):
   result=model(input_text)
   st.write("Prediction:", result[0]['label'],"|score:", result[0]['score'])
 
-if __name__="__main__":
+if __name__=="__main__":
 main()
