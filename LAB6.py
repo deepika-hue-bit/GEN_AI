@@ -6,7 +6,7 @@ def main():
 
   input_text=st.text_input("Enter your text", "")
 
-  model=pipeline("sentiment-analysis",model="")
+  model=pipeline("sentiment-analysis",model="distilbert/distilbert-base-uncased-finetuned-sst-2-english")
 
   if st.button("Analyse"):
     result=model(input_text)
